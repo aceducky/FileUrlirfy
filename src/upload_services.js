@@ -5,7 +5,7 @@ const upload_services = {
     name: "file.io",
     url: "https://file.io",
     filesDeletedAfterDownload: true,
-    maxFileSize: "2 GB",
+    maxFileSize:2147483648,
     supportsMultipleFiles: false,
     privacyPolicy: "https://www.file.io/privacy/",
     tos: "https://www.file.io/tos/",
