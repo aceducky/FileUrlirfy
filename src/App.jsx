@@ -1,10 +1,22 @@
 import { useState } from "react";
 import Form from "./Form";
+import upload_services from "./upload_services.js";
 import "./App.css";
 
 function App() {
-    const [files, setFiles] = useState([]);
-    return <Form files={files} setFiles={setFiles} />;
+  const [files, setFiles] = useState([]);
+  const [service, setService] = useState(upload_services["file.io"]);
+
+  return (
+    <div>
+      <Form
+        files={files}
+        setFiles={setFiles}
+        service={service}
+        setService={setService}
+      />
+    </div>
+  );
 }
 
 export default App;
